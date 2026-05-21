@@ -4,7 +4,7 @@ My personal developer portfolio showcasing 4 web development projects built with
 
 ## 🔗 Live Site
 
-> [[Add your GitHub Pages link here](https://regis-chifambaa.github.io/Portfolio/)]
+> [(https://regis-chifambaa.github.io/Portfolio/)]
 
 ---
 
