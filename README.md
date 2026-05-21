@@ -45,11 +45,6 @@ My personal developer portfolio showcasing 4 web development projects built with
 
 No installation needed:
 
-```bash
-git clone https://github.com/regis-chifambaa/portfolio.git
-cd portfolio
-open index.html
-```
 
 To deploy on GitHub Pages:
 1. Push to GitHub
