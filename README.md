@@ -5,7 +5,6 @@ My personal developer portfolio showcasing 4 web development projects built with
 ## 🔗 Live Site
 
 > [(https://regis-chifambaa.github.io/Portfolio/)]
-
 ---
 
 ## ✨ Features
@@ -16,7 +15,6 @@ My personal developer portfolio showcasing 4 web development projects built with
 - Mobile-responsive with hamburger menu
 - Project cards linking to live demos and GitHub repos
 - Stats section, skills grid, and contact links
-
 ---
 
 ## 🛠️ Tech Stack
@@ -44,7 +42,6 @@ My personal developer portfolio showcasing 4 web development projects built with
 ## 🚀 Setup
 
 No installation needed:
-
 
 To deploy on GitHub Pages:
 1. Push to GitHub
