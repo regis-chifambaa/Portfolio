@@ -28,26 +28,6 @@ document.addEventListener("click", (e) => {
 
 
 // ── Scroll reveal animation ───────────────────────────
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-        }
-    });
-}, { threshold: 0.1 });
-
-document.querySelectorAll(
-    ".stat-card, .skill-pill, .project-card, .contact-card, .about-text p"
-).forEach((el, i) => {
-    el.style.opacity    = "0";
-    el.style.transform  = "translateY(20px)";
-    el.style.transition = `opacity 0.5s ease ${i * 0.06}s, transform 0.5s ease ${i * 0.06}s`;
-    observer.observe(el);
-});
-
-document.addEventListener("animationstart", () => {}, false);
-
-// Add visible class via IntersectionObserver
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -60,7 +40,12 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(
     ".stat-card, .skill-pill, .project-card, .contact-card, .about-text p"
-).forEach(el => revealObserver.observe(el));
+).forEach((el, i) => {
+    el.style.opacity    = "0";
+    el.style.transform  = "translateY(20px)";
+    el.style.transition = `opacity 0.5s ease ${i * 0.06}s, transform 0.5s ease ${i * 0.06}s`;
+    revealObserver.observe(el);
+});
 
 
 // ── Active nav link on scroll ─────────────────────────
